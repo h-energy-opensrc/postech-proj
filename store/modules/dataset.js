@@ -3,8 +3,7 @@ import axios from 'axios'
 import fb from 'firebase'
 
 const state = {
-  datasets: [],
-  options: []
+  datasets: [1,2,3,4]
 }
 
 const getters = {

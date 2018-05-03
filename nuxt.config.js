@@ -24,5 +24,10 @@ module.exports = {
   modules: [
     '@nuxtjs/pwa'
   ],
-  css: [ 'tachyons' ]
+  css: [ 'tachyons' ],
+  plugins: [
+    // { src: "~plugins/vue2-editor.js", ssr: false },
+    { src: '~/plugins/fbConn.js', ssr: true },
+    // { src: '~/plugins/plotlyPlug.js', ssr: false }
+  ],
 }

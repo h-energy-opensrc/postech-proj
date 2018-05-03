@@ -6,7 +6,11 @@
   "private": true,
   "dependencies": {
     "@nuxtjs/pwa": "latest",
+    "axios": "0.18.0",
+    "d3.js": "0.0.2-security",
+    "firebase": "4.13.1",
     "nuxt": "latest",
+    "plotly.js": "1.37.1",
     "tachyons": "4.9.1"
   },
   "scripts": {

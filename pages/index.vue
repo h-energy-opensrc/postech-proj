@@ -1,11 +1,18 @@
 <template>
   <section>
     <nav class="pa3 pa4-ns">
-      <a class="link dim black b f6 f5-ns dib mr3" href="#" title="Home">Postech Project</a>
-      <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Home">Home</a>
-      <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="About">About</a>
-      <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Store">Team</a>
-      <!-- <a class="link dim gray    f6 f5-ns dib" href="#" title="Contact">Contact</a> -->
+      <nuxt-link to="/">
+        <a class="link dim black b f6 f5-ns dib mr3" title="Home">Postech Project</a>
+      </nuxt-link>
+      <nuxt-link to="/data">
+        <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="About">Data</a>
+      </nuxt-link>
+      <nuxt-link to="/about">
+        <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="About">About</a>
+      </nuxt-link>
+      <nuxt-link to="/team">
+        <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Store">Team</a>
+      </nuxt-link>
     </nav>
     <section class="pa3 pa4-ns">
       {{datasets}}
@@ -34,7 +41,7 @@ export default {
   computed: {
      ...mapGetters(
       {
-        datasets: 'dataset/getAllDatasets'
+        datasets: 'datasetModule/getAllDatasets'
       }
     )
   },
