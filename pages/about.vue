@@ -1,24 +1,19 @@
 <template>
     <section>
-        <nav class="pa3 pa4-ns">
-        <nuxt-link to="/">
-            <a class="link dim black b f6 f5-ns dib mr3" title="Home">Postech Project</a>
-        </nuxt-link>
-        <nuxt-link to="/about">
-            <a class="link dim gray    b f6 f5-ns dib mr3" href="#" title="About">About</a>
-        </nuxt-link>
-        <nuxt-link to="/team">
-            <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Store">Team</a>
-        </nuxt-link>
-        </nav>
-        <section>
+        <header-nav></header-nav>
+        <section class="ma3">
             About
         </section>
     </section>
 </template>
 <script> 
+import Header from '~/components/Header'
+
 export default {
   name: 'About',
+  components: {
+    headerNav: Header
+  },
 }
 </script>
 <style></style>
