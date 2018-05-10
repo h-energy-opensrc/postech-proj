@@ -3,9 +3,9 @@
     <nuxt-link to="/">
       <div class="link dim black b f6 f5-ns dib mr3" title="Home">Postech Project</div>
     </nuxt-link>
-    <nuxt-link to="/data">
+    <!-- <nuxt-link to="/data">
       <div class="link dim gray    b f6 f5-ns dib mr3"  title="About">Data</div>
-    </nuxt-link>
+    </nuxt-link> -->
     <!-- <nuxt-link to="/about">
       <div class="link dim gray    f6 f5-ns dib mr3"  title="About">About</div>
     </nuxt-link> -->
